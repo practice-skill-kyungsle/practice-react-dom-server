@@ -58,3 +58,4 @@ React18에서 SSR 방식이 도입되면서 기존의 render는 createRoot가 �
   - 서버측에서 렌더링한 결과를 `react-dom/server` 에서 `renderToString` 메서드를 활용해 HTML DOM 문자열로 만든다. 이 결과물은 당연하게도 내가 제작한 리액트 컴포넌트 마크업과 동일하다.
   - 그 결과물을 가져와서 `index.html` 파일 자체를 바꾸어준다. root tag 문자열을 결과물의 문자열로 바꾸어버리면 된다. (생각보다 와일드하다)
   - 바뀐 `index.html` 을 client에 보내주면 SSR 완성이다.
+- NextJS는 사실 express로 제작되어졌다. 구현을 열어보면 해당 레포지토리에서 진행한 과정과 비슷할 것이다. 
